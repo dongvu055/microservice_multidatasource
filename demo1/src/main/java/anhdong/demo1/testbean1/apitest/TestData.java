@@ -5,7 +5,6 @@ import anhdong.demo1.testbean1.entity.dao2.AppLink;
 import anhdong.demo1.testbean1.repo.repo1.DataRepo1;
 import anhdong.demo1.testbean1.repo.repo2.DataRepo2;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,8 +17,8 @@ public class TestData {
 
     DataRepo2 dataRepo2;
 
-    @Autowired
-    void test()
+
+    public void test()
     {
         List<AccountType> accountTypes = dataRepo1.findAll();
 
